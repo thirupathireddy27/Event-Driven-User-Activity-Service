@@ -55,6 +55,20 @@ To run the Consumer tests within the Docker environment:
 docker-compose exec consumer npm test
 ```
 
+## End-to-End Verification
+
+A helper script is provided in the `scripts/` directory to perform a full system check (Validation, Success, and Rate Limiting).
+
+With the Docker stack running, execute:
+```bash
+node scripts/test-e2e.js
+```
+
+This script will:
+1. Send an invalid request to trigger `400 Bad Request`.
+2. Send a valid request to trigger `202 Accepted`.
+3. Stress test the endpoint to trigger `429 Too Many Requests`.
+
 ## API Documentation
 
 See [API_DOCS.md](./API_DOCS.md) for detailed endpoint documentation.
