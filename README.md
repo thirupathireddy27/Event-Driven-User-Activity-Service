@@ -39,7 +39,7 @@ This will spin up:
 - API Service on port `3000`
 - Consumer Service (runs in the background)
 
-The RabbitMQ Management UI is accessible at `http://localhost:15672` (credentials: `guest` / `guest`).
+The RabbitMQ Management UI is accessible at `http://localhost:15674` (credentials: `guest` / `guest`).
 
 ## Testing
 
