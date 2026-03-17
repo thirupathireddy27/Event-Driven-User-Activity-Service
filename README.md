@@ -1,4 +1,4 @@
-# Event-Driven User Activity Service
+# Event-Driven User Activity Service  
 
 An event-driven microservice system for tracking user activities. Built with Node.js, Express, RabbitMQ, MongoDB, and Docker.
 
